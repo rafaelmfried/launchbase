@@ -1,36 +1,36 @@
 //Construção e impressão de objetos
 
-const empresa = {
-    nome: 'RocketSeat',
-    cor: 'roxo',
-    foco: 'programacao',
-    endereco: {
-        rua: 'Rua Guilherme Gembala',
-        numero: 260
+const company = {
+    name: 'RocketSeat',
+    color: 'roxo',
+    focus: 'programacao',
+    address : {
+        street: 'street Guilherme Gembala',
+        number: 260
     }
 }
 
-console.log(`A empresa ${empresa.nome} está localizada em ${empresa.endereco.rua}, ${empresa.endereco.numero}`)
+console.log(`A empresa ${company.name} está localizada em ${company.address .street}, ${company.address .number}`)
 
 //Vetores e Objetos
 
-const programadorA = {
-    nome: 'Rafael',
-    idade: 25,
-    tecnologias: [
+const programmer = {
+    name: 'Rafael',
+    age: 25,
+    tecnologies: [
         {
-            nome: 'C',
-            especialidade: 'Desktop'
+            name: 'C',
+            specialty: 'Desktop'
         },
         {
-            nome: 'Python',
-            especialidade: 'Desktop'
+            name: 'Python',
+            specialty: 'Desktop'
         },
         {
-            nome: 'JavaScript',
-            especialidade: 'Web/Mobile'
+            name: 'JavaScript',
+            specialty: 'Web/Mobile'
         }
     ]
 }
 
-console.log(`O usuário ${programadorA.nome} tem ${programadorA.idade} anos e usa a tecnologia ${programadorA.tecnologias[0].nome} com especialidade em ${programadorA.tecnologias[0].especialidade}`)
+console.log(`O usuário ${programmer.name} tem ${programmer.age} anos e usa a tecnologia ${programmer.tecnologies[0].name} com especialidade em ${programmer.tecnologies[0].specialty}`)

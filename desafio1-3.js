@@ -1,79 +1,88 @@
-//Usuarios e Tecnologias
-const usuarios = [
-    {nome: 'Rafael', tecnologias: ['C','Python','JavaScript']},
-    {nome:'Carlos', tecnologias: ['HTML', 'CSS']},
-    {nome: 'Jasmine', tecnologias: ['JavaScript','CSS', 'HTML']}
+//users e Tecnologias
+const users = [
+    {name: 'Rafael', tecnologies: ['C','Python','JavaScript']},
+    {name:'Carlos', tecnologies: ['HTML', 'CSS']},
+    {name: 'Jasmine', tecnologies: ['JavaScript','CSS', 'HTML']}
 ]
 
-function messager (usuarios){
-    for(let i = 0; i < usuarios.length; i++){
-        let message = `${usuarios[i].nome} trabalha com `
+function messager (users){
+    
+    for(let i = 0; i < users.length; i++){
+        let message = `${users[i].name} trabalha com `
 
-        for(let j = 0; j < usuarios[i].tecnologias.length; j++){
-          message =  message + `${usuarios[i].tecnologias[j]}`
-            if(j+1 < usuarios[i].tecnologias.length)
+        for(let j = 0; j < users[i].tecnologies.length; j++){
+          message =  message + `${users[i].tecnologies[j]}`
+            
+            if(j+1 < users[i].tecnologies.length)
                 message = message + ', '
             else
                 message = message + '.'
         }
+
         console.log(message)
     }
 }
 
-messager(usuarios)
+messager(users)
 
-//Busca por tecnologia
-function checaSeUsuarioUsaCSS (usuario) {
-    for(let i = 0; i < usuario.tecnologias.length; i++){
-        if(usuario.tecnologias[i] === 'CSS')
+//Search for tecnologies
+function checkCssUsers (user) {
+    
+    for(let i = 0; i < user.tecnologies.length; i++){
+        
+        if(user.tecnologies[i] === 'CSS')
             return true
     }
+
     return false
 }
 
-for(let i = 0; i < usuarios.length; i++){
-    if(checaSeUsuarioUsaCSS(usuarios[i]))
-        console.log(`O usuario ${usuarios[i].nome} trabalha com CSS`)
+for(let i = 0; i < users.length; i++){
+    
+    if(checkCssUsers(users[i]))
+        console.log(`O usuario ${users[i].name} trabalha com CSS`)
 }
 
-//Soma de despesas e receitas
-const users = [
+//sum of expenses and income
+const usersCashBook = [
     {
-        nome: "Salvio",
-        receitas: [115.3, 48.7, 98.3, 14.5],
-        despesas: [85.3, 13.5, 19.9]
+        name: "Salvio",
+        income: [115.3, 48.7, 98.3, 14.5],
+        expenses: [85.3, 13.5, 19.9]
     },
     {
-        nome: "Marcio",
-        receitas: [24.6, 214.3, 45.3],
-        despesas: [185.3, 12.1, 120.0]
+        name: "Marcio",
+        income: [24.6, 214.3, 45.3],
+        expenses: [185.3, 12.1, 120.0]
     },
     {
-        nome: "Lucia",
-        receitas: [9.8, 120.3, 340.2, 45.3],
-        despesas: [450.2, 29.9]
+        name: "Lucia",
+        income: [9.8, 120.3, 340.2, 45.3],
+        expenses: [450.2, 29.9]
     }
 ]
 
-function somaNumeros(numeros) {
-    let soma = 0
-    for(let i = 0; i < numeros.length; i++)
-        soma = soma + numeros[i]
+function addnumbers(numbers) {
+    let sum = 0
     
-    return soma
+    for(let i = 0; i < numbers.length; i++)
+        sum = sum + numbers[i]
+    
+    return sum
 }
 
-function calculaSaldo (receitas, despesas) {
-    return somaNumeros(receitas) - somaNumeros(despesas)
+function balance (income, expenses) {
+    return addnumbers(income) - addnumbers(expenses)
 }
 
-for(let i = 0; i < users.length; i++){
+for(let i = 0; i < usersCashBook.length; i++){
     let flag = "ZERADO"
-    let saldo = calculaSaldo(users[i].receitas, users[i].despesas)
+    let saldo = balance(usersCashBook[i].income, usersCashBook[i].expenses)
+    
     if(saldo >= 0)
         flag = "POSITIVO"
     else
         flag = "NEGATIVO"
     
-    console.log(`${users[i].nome} possui saldo ${flag} de ${saldo.toFixed(2)}.`)
+    console.log(`${usersCashBook[i].name} possui saldo ${flag} de ${saldo.toFixed(2)}.`)
 }
