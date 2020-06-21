@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(121, 121, 121);
+    font-family: 'Roboto', sans-serif;  
+}
+
+body header {
+    font-family: 'Roboto', sans-serif;  
+    background: rgba(113, 89, 193, 0.938);
+    text-align: right;
+}
+
+body header div {
+    padding: 30px 50px 30px 0;
+}
+
+body header div a {
+    color: rgb(175, 158, 230);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+body header div a:hover {
+    color: rgb(255, 255, 255);
+    padding-bottom: 4px;
+    border-bottom: solid white  ;
+    transition: color 500ms;
+}
+
+body div.info {
+    margin: 30px auto 20px;
+    width: 400px;
+    background-color: rgb(121, 122, 121);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+body div.info img.logo {
+    margin: 30px 0 5px;
+    border-radius: 50%;
+    border: 2px solid;
+    width: 250px;
+}
+
+body div.info h2 {
+    font-size: 40px;
+}
+
+body div.info h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+body div.info p {
+    font-size: 15px;
+    max-width: 300px;
+    margin: 0 auto 15px;
+}
+
+body div.info ul {
+
+}
+
+body div.info div {
+    margin-top: 15px;
+}
+body div.links {
+    margin-bottom: 5px;
+}
+
+body div.links a img {
+    width: 20px;
+    margin: 0  5px;
+}
+
+body div.links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+}
+
+body div.links a:hover {
+    font: bold;
+    border-bottom: solid 1px rgb(8, 209, 8);
+    color:rgb(113, 89, 193);
+    font: bold;
+    transition: color 300ms;
+}
+
+body div.source a {
+    text-decoration: none;
+    color: black;
+}
+
+body div.source a:hover {
+    color: royalblue;
+    transition: color 300ms;
+}
