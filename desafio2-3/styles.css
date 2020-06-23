@@ -50,7 +50,7 @@ body header div a:hover {
 /*=== SOBRE.HTML ===*/
 
 body div.info {
-    margin: 30px auto;
+    margin: 30px auto 0;
     max-width: 800px;
     padding-bottom: 10px;
 }
@@ -74,11 +74,28 @@ body div.info h3 {
 body div.info p {
     font-size: 15px;
     max-width: 300px;
-    margin: 0 auto 15px;
+    margin: 0 auto;
 }
 
-body div.info ul {
+.tecnologies__list {
+    max-width: 200px;
+    margin: 0 auto 20px;
+}
 
+.tecnologies__list ul {
+    list-style: none;
+}
+
+.tecnologies__list ul li {
+    color: ;
+}
+
+.tecnologies__list ul h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-background-header);
+    font: bolder;
 }
 
 body div.links {
@@ -163,7 +180,7 @@ body div.source a:hover {
 }
 
 .modal .close-modal {
-    color: black;
+    color: var(--color-black);
     position: absolute;
     right: 8px;
     top: 8px;
@@ -171,7 +188,7 @@ body div.source a:hover {
 }
 
 .modal .maximaze-modal {
-    color: black;
+    color: var(--color-black);
     position: absolute;
     right: 28px;
     top: 8px;
@@ -179,7 +196,7 @@ body div.source a:hover {
 }
 
 .modal .minimaze-modal {
-    color: black;
+    color: var(--color-black);
     position: absolute;
     right: 28px;
     top: 8px;
