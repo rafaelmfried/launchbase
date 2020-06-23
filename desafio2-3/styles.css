@@ -1,0 +1,127 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --color-background-header: rgba(113, 89, 193, 0.938);
+    --color-background: rgb(121,121,121);
+    --color-body-text: white;
+    --color-links-hover: rgb(8, 209, 8);
+    --color-blue-hover: royalblue;
+    --color-black: rgb(0,0,0);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-body-text);
+    text-align: center;
+}
+
+/*=== HEADER ===*/
+
+body header { 
+    background: var(--color-background-header);
+    text-align: right;
+}
+
+body header div {
+    padding: 30px 50px 30px 0;
+}
+
+body header div a {
+    color: var(--color-background-header);
+    filter: brightness(200%);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+body header div a:hover {
+    color: var(--color-body-text);
+    border-bottom: solid var(--color-body-text);
+    padding-bottom: 4px;
+    transition: color 300ms;
+}
+
+/*=== SOBRE.HTML ===*/
+
+body div.info {
+    margin: 30px auto;
+    max-width: 800px;
+    padding-bottom: 10px;
+}
+
+body div.info img.logo {
+    margin: 30px 0 5px;
+    border-radius: 50%;
+    border: 2px solid var(--color-body-text);
+    width: 250px;
+}
+
+body div.info h2 {
+    font-size: 40px;
+}
+
+body div.info h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+body div.info p {
+    font-size: 15px;
+    max-width: 300px;
+    margin: 0 auto 15px;
+}
+
+body div.info ul {
+
+}
+
+body div.links {
+    margin-bottom: 5px;
+}
+
+body div.links a img {
+    width: 20px;
+    margin: 0  5px;
+}
+
+body div.links a {
+    text-decoration: none;
+    color: var(--color-body-text);
+    margin-right: 5px;
+}
+
+body div.links a:hover {
+    border-bottom: solid 1px var(--color-links-hover);
+    color:var(--color-links-hover);
+    transition: color 300ms;
+}
+
+body div.source a {
+    text-decoration: none;
+    color: var(--color-body-text);
+}
+
+body div.source a:hover {
+    color: var(--color-blue-hover);
+    transition: color 300ms;
+}
+
+/*=== CONTEUDOS ===*/
+
+.cards {
+    max-width: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    margin: 0 10px;
+    padding: 20px 0;
+}
