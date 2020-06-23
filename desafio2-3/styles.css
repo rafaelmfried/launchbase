@@ -115,13 +115,109 @@ body div.source a:hover {
 /*=== CONTEUDOS ===*/
 
 .cards {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 50px auto;
 }
 
 .card {
-    margin: 0 10px;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 5px solid rgba(0,0,0,0.3) ;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 20px 10px;
+}
+
+.card__peace {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+/*=== MODAL ===*/
+
+.modal-overlay {
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0 ;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximaze-modal {
+    color: black;
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .minimaze-modal {
+    color: black;
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*=== MODAL  ACTIVE===*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*=== MODAL  MAXIMAZE===*/
+.modal.maximaze {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+.modal.maximaze .minimaze-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.maximaze .maximaze-modal {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*=== IFRAME ===*/
+
+iframe {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    top: 30px;
 }

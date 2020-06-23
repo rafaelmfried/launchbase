@@ -7,9 +7,11 @@
     <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <div>
             <a href="./index.html">Inicio</a>
@@ -22,17 +24,81 @@
     </header>
 
     <section class="cards">
+
         <div class="card" id="starter">
-            <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Starter">
+            
+            <div class="image__container">
+                <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Starter">
+            </div>
+
+            <div class="card__info">
+
+                <p class="card__peace">Módulos</p><p class="card__peace">5</p>
+                
+                <p class="card__peace">Custo</p><p class="card__peace">Free</p>
+
+            </div>
+
         </div>
 
-        <div class="card" id="lauchbase">
-            <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="LaunshBase">
+        <div class="card" id="launchbase">
+            
+            <div class="image__container">
+                <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="LaunshBase">
+            </div>
+
+            <div class="card__info">
+
+                <p class="card__peace">Módulos</p><p class="card__peace">10</p>
+                
+                <p class="card__peace">Custo</p><p class="card__peace">Pago</p>
+
+            </div>
+        
         </div>
 
         <div class="card" id="gostack">
-            <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="GoStack">
+
+            <div class="image__container">
+                <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="GoStack">
+            </div>
+            
+            <div class="card__info">
+
+                <p class="card__peace">Módulos</p><p class="card__peace">20</p>
+                
+                <p class="card__peace">Custo</p><p class="card__peace">Pago</p>
+
+            </div>
+
         </div>
+
     </section>
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <a class="maximaze-modal">
+                <i class="material-icons">fullscreen</i>
+            </a>
+
+            <a class="minimaze-modal">
+                <i class="material-icons">fullscreen_exit</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./scripts.js"></script>
 </body>
 </html>
