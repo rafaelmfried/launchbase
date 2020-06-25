@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --color-background: white;
+    --color-text-one: #111111;
+    --color-text-two: #000000;
+    --color-text-about: #444444;
+    --color-text-author: #777777;
+    --color-background-billboard: #FBDFDB;
+    --color-background-footer: #EEEEEE;
+    --color-text-footer: #999999;
+    --color-background-modal-overlay: rgba(0, 0, 0,0.6);
+    --color-background-modal: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*=== HEADER ===*/
+
+header {
+    height: 63px;
+    max-width: 940px;
+    background-color: var(--color-background);
+    margin: 0 auto;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top:36.1px;
+}
+
+header .menu {
+    position: absolute;
+    top: 38px;
+    left: 198px;
+}
+
+header .menu a {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: var(--color-text-one);
+    padding: 0 13px;
+    margin: 0 2px;
+}
+
+/*=== MAIN ===*/
+.main_index {
+    max-width: 940px;
+    margin: 30px auto 50px;
+}
+
+.main_about {
+    max-width: 940px;
+    margin: 50px auto;
+}
+
+.main_recipes {
+    max-width: 940px;
+    margin: 50px auto;
+}
+
+/*=== FOOTER ===*/
+
+footer {
+    height: 63px;
+    background-color: var(--color-background-footer);
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-text-footer);
+    padding: 23px 0;
+}
+
+/*=== BILLBOARD ===*/
+
+.billboard {
+    height: 366px;
+    width: 100%;
+    background-color: var(--color-background-billboard);
+    border-radius: 30px;
+    position: relative;
+}
+
+.billboard-text {
+    max-width: 316px;
+    position: absolute;
+    left: 60px;
+    bottom: 117px;
+}
+
+.billboard-slogan {
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-text-one);
+}
+
+.billboard-description {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-text-two);
+    margin-top: 10px;
+}
+
+.billboard img {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+/*=== HIGHLIGHTS RECIPES ===*/
+
+.highlights_recipes {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.highlights_title {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-text-one);
+}
+
+/*=== CARDS ===*/
+
+.recipes_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 202px;
+}
+
+.card_image-container {
+    width: 300px;
+    height: 140px;
+}
+
+.card_image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card .card_title {
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-text-one);
+    margin-top: 20px;
+}
+
+.card .card_author {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-text-author);
+    margin-top: 5px;
+}
+
+/*=== SOBRE ===*/
+
+.main_about h2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-text-one);
+    margin-bottom: 20px;
+}
+
+.main_about h3 {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-text-one);
+    margin-bottom: 20px;
+}
+
+.main_about p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-text-about);
+}
+
+.about_foodfy p,
+.howstarts p {
+    margin-bottom: 30px;
+}
+
+/*=== MODAL ===*/
+
+.modal-overlay {
+    background-color: var(--color-background-modal-overlay);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: var(--color-background-modal);
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -206.5px -330px;
+    position: relative;
+}
+
+.modal_image-container {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 30px;
+    left: 30px;
+}
+
+.modal_image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.modal_content {
+    position: absolute;
+    width: 600px;
+    top: 250px;
+    left: 30px;
+    text-align: center;
+}
+
+.modal_content .modal_recipe-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-text-one);
+    margin-bottom: 5px;
+}
+
+.modal_recipe-author {
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-text-author);
+}
+
+.close-modal {
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-text-footer);
+    bottom: 30px;
+    left: 281px;
+    cursor: pointer;
+}
+
+/*=== MODAL ACTIVE ===*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
