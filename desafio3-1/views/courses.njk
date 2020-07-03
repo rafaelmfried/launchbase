@@ -1,0 +1,118 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Desafio 3-1 - Conteúdos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+{% block nav %}
+    <nav>
+        <a href="/"><img src="/assets/logo.svg" alt="RocketSeat"></a>
+        <a href="/about">Sobre</a>
+        <a href="/" style="font-weight: bold; color: aqua;">Conteúdos</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+
+    <main id="conteudos">
+        <section class="cards">
+
+            <div class="card" id="starter">
+
+                <span>01</span>
+
+                <div class="card__image-container">
+                    <img src="/assets/starter.svg" alt="starter">
+                </div>
+
+                <div class="card__content">
+                    <div class="card__description">
+                        <p>
+                            <p class="starter__highlight">Torne-se um programador desejado</p>
+                            no mercado com esses cursos<br>gratuitos</p>
+                    </div>
+                    <div class="card__info">
+                        <p>Pago</p>
+                        <p>10 modulos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card" id="launchbase">
+
+                <span>02</span>
+
+                <div class="card__image-container">
+                    <img src="/assets/launchbase.svg" alt="launchbase">
+                </div>
+
+                <div class="card__content">
+                    <div class="card__description">
+                        <p>
+                            <p class="launchbase__highlight">Domine programação do zero</p>
+                            e tenha acesso ás melhores oportunidades do mercado</p>
+                    </div>
+                    <div class="card__info">
+                        <p>Pago</p>
+                        <p>16 modulos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card" id="gostack">
+
+                <span>03</span>
+
+                <div class="card__image-container">
+                    <img src="/assets/gostack.svg" alt="gostack">
+                </div>
+
+                <div class="card__content">
+                    <div class="card__description">
+                        <p>
+                            <p class="gostack__highlight">Treinamento imersivo</p>
+                            nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+                    </div>
+                    <div class="card__info">
+                        <p>Pago</p>
+                        <p>20 modulos</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <a class="maximaze-modal">
+                <i class="material-icons">fullscreen</i>
+            </a>
+
+            <a class="minimaze-modal">
+                <i class="material-icons">fullscreen_exit</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/javascript/script.js"></script>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Desafio 3-1 - Sobre</title>
+
+{% endblock %}
+
+{% block nav%}
+
+    <nav>
+        <a href="/"><img src="/assets/logo.svg" alt="RocketSeat"></a>
+        <a href="/about" style="font-weight: bold; color: aqua;">Sobre</a>
+        <a href="/">Conteúdos</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <main id="sobre">
+        <img src="https://avatars1.githubusercontent.com/u/28929274?s=280&v=4" alt="RocketSeat">
+        <h3>RocketSeat</h3>
+        <p>As melhores tecnologias em programação, direto ao ponto e do jeito certo.</p>
+        <h4>Nossas tecnologias:</h4>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React Native</li>
+            <li>(...)</li>
+        </ul>
+    </main>
+{% endblock %}
