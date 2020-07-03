@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Desafio 3-1 - Sobre</title>
+
+{% endblock %}
+
+{% block nav%}
+
+    <nav>
+        <a href="/"><img src="/assets/logo.svg" alt="RocketSeat"></a>
+        <a href="/about" style="font-weight: bold; color: aqua;">Sobre</a>
+        <a href="/">Conteúdos</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <main id="sobre">
+        <img src="{{about.img_url}}" alt="{{about.name}}">
+        <h3>{{about.name}}</h3>
+        <p>{{about.description}}</p>
+        <h4>{{about.tecnologiesTitle}}</h4>
+        <ul>
+            {% for tec in about.tecnologiesList%}
+                <li>{{tec}}</li>
+            {% endfor %}
+        </ul>
+    </main>
+{% endblock %}
