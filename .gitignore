@@ -1,2 +1,6 @@
+.gitignore
 .vscode/
-.foodfy-refactoring/
+foodfy-refactoring/
+teste/
+node_modules/
+*.json

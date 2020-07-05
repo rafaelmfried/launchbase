@@ -1,0 +1,52 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Desafio 3-3 -
+        {{course.id}}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+{% block nav %}
+    <nav>
+        <a href="/"><img src="/assets/logo.svg" alt="RocketSeat"></a>
+        <a href="/about">Sobre</a>
+        <a href="/" style="font-weight: bold; color: aqua;">Conteúdos</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+
+    <main id="conteudos">
+
+        <div class="card coursePage" id="{{course.id}}">
+
+            <span>{{course.number}}</span>
+
+            <div class="card__image-container">
+                <img src="{{course.img_url}}" alt="{{course.id}}">
+            </div>
+
+            <div class="card__content">
+                <div class="card__description">
+                    <p>
+                        <p class="{{course.id}}__highlight">{{course.descriptionHighlight}}</p>
+                        {{course.description}}</p>
+                </div>
+
+                <div class="card__info">
+                    <p>{{course.price}}</p>
+                    <p>{{course.modules}}</p>
+                </div>
+
+                 <div class="coursePage__info">
+                    <p>Click no card para ir para pagina do curso!</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/javascript/script.js"></script>
+{% endblock %}

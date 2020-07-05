@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    /*=== CORES ROCKETSEAT ===*/
+    --color-roxo-rocketseat: #7159c1;
+    --color-orange-rocketseat: #Fd921f;
+    --color-green-rocketseat: #04d361;
+
+    --color-font-white: #ffffff;
+
+    --color-linkhover: #087ce9;
+    --color-card-border: #ffffff;
+
+    --color-body-background: #000000;
+    
+    --color-header-background: #000000;
+    --color-header-font: #ffffff;
+
+    --color-footer-background: #000000;
+    --color-footer-font: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(/assets/mountain-background.png);
+    background-color: var(--color-body-background);
+}
+
+/*=== HEADER ===*/
+
+header {
+    height: 70px;
+    background-color: var(--color-header-background);
+}
+
+header .menu {
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .menu nav {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--color-header-font);
+}
+
+header a:hover {
+    color: var(--color-linkhover);
+}
+
+header .menu .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*=== MAIN ===*/
+
+main {
+    padding: 50px 0 30px 0;
+}
+
+/*=== FOOTER ===*/
+
+footer {
+    position: absolute  ;
+    bottom: 0;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+footer a {
+    margin: auto 10px;
+    text-decoration: none;
+    color: var(--color-footer-font);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--color-linkhover);
+}
+
+footer a img {
+    height: 20px;
+    margin-right: 3px;
+}
+
+/*=== SOBRE ===*/
+
+#sobre {
+    text-align: center;
+    color: var(--color-roxo-rocketseat);
+}
+
+#sobre img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#sobre h3 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+#sobre p {
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+#sobre h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--color-font-white);
+}
+
+#sobre ul {
+    list-style: none;
+}
+
+#sobre ul li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*=== CONTEUDOS ===*/
+
+#conteudos {
+    display: flex;
+    justify-content: center;
+}
+
+#conteudos .cards {
+    margin-top: 100px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#conteudos .card {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid var(--color-card-border);
+    color: var(--color-font-white);
+    padding-top: 20px;
+    text-align: center;
+}
+
+#conteudos span {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid var(--color-font-white);
+    border-radius: 50%;
+}
+
+#conteudos #starter span {
+    border: 3px solid var(--color-roxo-rocketseat);
+    color: var(--color-roxo-rocketseat);
+}
+
+#conteudos #launchbase span {
+    border: 3px solid var(--color-orange-rocketseat);
+    color: var(--color-orange-rocketseat);
+}
+
+#conteudos #gostack span {
+    border: 3px solid var(--color-green-rocketseat);
+    color: var(--color-green-rocketseat);
+}
+
+#conteudos .card .card__image-container {
+    height: auto;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#conteudos .card .card__content {
+    height: auto;
+    text-align: center;
+}
+
+.card__description {
+    margin-bottom: 50px;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card__info p {
+    padding: 10px;
+}
+
+.starter__highlight {
+    color: var(--color-roxo-rocketseat);
+    font-weight: bold;
+}
+
+#conteudos #starter {
+    background: url(./assets/background_img.png);
+    background-size: cover;
+}
+
+#conteudos #starter:hover {
+    border: 3px solid var(--color-roxo-rocketseat);
+}
+
+.launchbase__highlight {
+    color: var(--color-orange-rocketseat);
+    font-weight: bold;
+}
+
+#conteudos #launchbase {
+    background: url(./assets/background_img.png);
+    background-size: cover;
+}
+
+#conteudos #launchbase:hover {
+    border: 3px solid var(--color-orange-rocketseat);
+}
+
+.gostack__highlight {
+    color: var(--color-green-rocketseat);
+    font-weight: bold;
+}
+
+#conteudos #gostack {
+    background: url(./assets/background_img.png);
+    background-size: cover;
+}
+
+#conteudos #gostack:hover {
+    border: 3px solid var(--color-green-rocketseat);
+}
+
+/*=== IFRAME ===*/
+
+iframe {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+/*=== COURSE PAGE ===*/
+
+.coursePage__info p {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-font-white);
+    margin-top: 30px;
+}
+
+/*=== NOT FOUND ===*/
+
+.not-found {
+    text-align: center;
+    color: var(--color-font-white);
+    position: absolute;
+     top: 40vh;
+     left: 40vw;
+}
