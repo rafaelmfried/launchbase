@@ -1,0 +1,113 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Desafio 4-3 - Teacher Create</title>
+{% endblock %}
+
+{% block content %}
+    
+    <form class="card" method="POST" action="/teachers">
+        
+        <section 
+            class="avatar" 
+            style="background: url(https://source.unsplash.com/collection/517198/400x500) no-repeat center center / cover">
+
+        </section>
+        
+        <section class="details">
+
+            <h3>Detalhes</h3>
+
+            <div class="teachers_info">
+
+                <div class="item">
+                    <div>Avatar URL</div>
+                    <div>
+                        <input
+                            type="url"
+                            name="avatar_url"
+                            placeholder="http://"
+                        >
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div>Nome completo</div>
+                    <div>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Nome do Professor"
+                        >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>Data de nascimento</div>
+                    <div>
+                        <input 
+                            type="date" 
+                            name="birth"
+                        >
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>Grau de escolaridade</div>
+                    <div>
+                        <select name="education_level">
+                            <option value="high_school">Ensino Médio Completo</option>
+                            <option value="degree">Ensino Superior Completo</option>
+                            <option value="masters">Mestrado</option>
+                            <option value="phd">Doutorado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>Tipo de aula</div>
+                    <div>
+                       <span>
+                            <input
+                                type="radio" 
+                                name="class_type"
+                                value="distance"
+                                checked
+                            >
+                            À distância
+                       </span>
+                       
+                        <span>
+                            <input
+                                type="radio" 
+                                name="class_type"
+                                value="presential"
+                            >
+                            Presencial
+                       </span>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>Área de atuação</div>
+                    <div>
+                        <input 
+                            type="text" 
+                            name="teacher_skills"
+                            placeholder="Separe as áreas de atuação por virgula"
+                        >
+                    </div>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+
+            </div>
+
+        </section>
+
+    </form>
+
+{% endblock %}
+
