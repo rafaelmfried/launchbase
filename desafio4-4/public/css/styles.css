@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+:root {
+    --color-primary: #3454d1;
+    --color-secondary:#b8e1ff;
+    --color-mark:#dd1c1a;
+    --color-green:#337357;
+    --color-green-light: #adf7b6;
+
+    --color-title: #555;
+
+    --color-header-background: #ffffff;
+    --color-white: #ffffff;
+    --color-hover: #3454d1;
+    --color-black: #000000;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-primary);
+}
+
+header {
+    height: 80px;
+    background-color: var(--color-header-background);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+header nav a + a {
+    margin-left: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-black);
+    position: relative;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--color-hover);
+    font-weight: bold;
+}
+
+header nav a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    background-color: var(--color-hover);
+}
+
+header nav a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+/*=== CARD ===*/
+
+.card {
+    width: 800px;
+    min-height: 500px;
+    margin: 45px auto;
+
+    background-color: var(--color-white);
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.5);
+
+    animation-name: up 500ms ease-in-out;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .teachers_info .item {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+}
+
+.details .teachers_info .item:first-child {
+    border: none;
+}
+
+.details h3,
+.details .teachers_info .item div:nth-child(1) {
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+}
+
+.details .teachers_info .item div:nth-child(2) {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.details .teachers_info .item div:nth-child(2) span {
+    padding: 5px 16px;
+    background-color: var(--color-green-light);
+    color: var(--color-black);
+    border-radius: 15px;
+    margin-right: 4px;
+    display: inline-block;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+/*=== FORM ===*/
+input {
+    width: 100%;
+    outline: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+}
+
+select {
+    font-size: 16px;
+    color: var(--color-primary);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 8px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"],
+a.button {
+    padding: 8px 32px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    width: 100%;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
