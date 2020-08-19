@@ -272,4 +272,6 @@ td:last-child {
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
+    display: inline-block;
+    margin-top: 2px;
 }
